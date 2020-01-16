@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DiyetDbModelStoreContainer" CdmEntityContainer="DiyetDbEntities">
+    <EntitySetMapping Name="BesinlerTbl">
+      <EntityTypeMapping TypeName="DiyetDbModel.BesinlerTbl">
+        <MappingFragment StoreEntitySet="BesinlerTbl">
+          <ScalarProperty Name="besinDurum" ColumnName="besinDurum" />
+          <ScalarProperty Name="BesinTipID" ColumnName="BesinTipID" />
+          <ScalarProperty Name="BesinGramaj" ColumnName="BesinGramaj" />
+          <ScalarProperty Name="BesinKalori" ColumnName="BesinKalori" />
+          <ScalarProperty Name="BesinAdi" ColumnName="BesinAdi" />
+          <ScalarProperty Name="BesinID" ColumnName="BesinID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BesinTipTbl">
+      <EntityTypeMapping TypeName="DiyetDbModel.BesinTipTbl">
+        <MappingFragment StoreEntitySet="BesinTipTbl">
+          <ScalarProperty Name="besinTipDurum" ColumnName="besinTipDurum" />
+          <ScalarProperty Name="BesinTipi" ColumnName="BesinTipi" />
+          <ScalarProperty Name="BesinTipID" ColumnName="BesinTipID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DiyetisyenTbl">
+      <EntityTypeMapping TypeName="DiyetDbModel.DiyetisyenTbl">
+        <MappingFragment StoreEntitySet="DiyetisyenTbl">
+          <ScalarProperty Name="diyetisyenTipi" ColumnName="diyetisyenTipi" />
+          <ScalarProperty Name="diyetisyenSifre" ColumnName="diyetisyenSifre" />
+          <ScalarProperty Name="diyetisyenAdi" ColumnName="diyetisyenAdi" />
+          <ScalarProperty Name="diyetisyenID" ColumnName="diyetisyenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KisiDetay">
+      <EntityTypeMapping TypeName="DiyetDbModel.KisiDetay">
+        <MappingFragment StoreEntitySet="KisiDetay">
+          <ScalarProperty Name="bilgiGuncellemeTarihi" ColumnName="bilgiGuncellemeTarihi" />
+          <ScalarProperty Name="VucutKitleIndeksi" ColumnName="VucutKitleIndeksi" />
+          <ScalarProperty Name="IdealKilo" ColumnName="IdealKilo" />
+          <ScalarProperty Name="YagsizVucutAgirligi" ColumnName="YagsizVucutAgirligi" />
+          <ScalarProperty Name="VucutYuzeyAlani" ColumnName="VucutYuzeyAlani" />
+          <ScalarProperty Name="KaloriIhtiyaci" ColumnName="KaloriIhtiyaci" />
+          <ScalarProperty Name="CalismaBicimi" ColumnName="CalismaBicimi" />
+          <ScalarProperty Name="Kilo" ColumnName="Kilo" />
+          <ScalarProperty Name="Boy" ColumnName="Boy" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="KisiDetayID" ColumnName="KisiDetayID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KisiTbl">
+      <EntityTypeMapping TypeName="DiyetDbModel.KisiTbl">
+        <MappingFragment StoreEntitySet="KisiTbl">
+          <ScalarProperty Name="telefonNo" ColumnName="telefonNo" />
+          <ScalarProperty Name="kisiAktif" ColumnName="kisiAktif" />
+          <ScalarProperty Name="diyetisyenID" ColumnName="diyetisyenID" />
+          <ScalarProperty Name="kayitTarihi" ColumnName="kayitTarihi" />
+          <ScalarProperty Name="DTarihi" ColumnName="DTarihi" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgunTbl">
+      <EntityTypeMapping TypeName="DiyetDbModel.OgunTbl">
+        <MappingFragment StoreEntitySet="OgunTbl">
+          <ScalarProperty Name="ogunDurum" ColumnName="ogunDurum" />
+          <ScalarProperty Name="diyetProgramiTarihi" ColumnName="diyetProgramiTarihi" />
+          <ScalarProperty Name="BesinAdet" ColumnName="BesinAdet" />
+          <ScalarProperty Name="BesinID" ColumnName="BesinID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="OgunID" ColumnName="OgunID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,57 @@
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.exe.config
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.exe
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.pdb
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csprojAssemblyReference.cache
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form1.resources
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Properties.Resources.resources
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csproj.GenerateResource.cache
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.exe
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.pdb
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form2.resources
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form3.resources
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form4.resources
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.exe.config
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.exe
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.pdb
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csprojAssemblyReference.cache
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form1.resources
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form2.resources
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form3.resources
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form4.resources
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Properties.Resources.resources
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csproj.GenerateResource.cache
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.exe
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.pdb
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form5.resources
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.dll
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.xml
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form6.resources
+C:\Users\Wissen\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csproj.CopyComplete
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.dll
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.xml
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form5.resources
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form6.resources
+C:\Users\ybrk0\source\repos\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csproj.CopyComplete
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.exe.config
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.exe
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\bin\Debug\DiyetProgrami.pdb
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.dll
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.SqlServer.dll
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.xml
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\bin\Debug\EntityFramework.SqlServer.xml
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csprojAssemblyReference.cache
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form1.resources
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form2.resources
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form3.resources
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form4.resources
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form5.resources
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Form6.resources
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.Properties.Resources.resources
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csproj.GenerateResource.cache
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.csproj.CopyComplete
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.exe
+G:\WİSSEN\DİYET FİNİSH\DiyetProgrami\DiyetProgrami\obj\Debug\DiyetProgrami.pdb

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5e59dfacd0d84b6ca1b3e3f7edb5a8e5" Name="Diagram1">
+        <EntityTypeShape EntityType="DiyetDbModel.BesinlerTbl" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="DiyetDbModel.BesinTipTbl" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="DiyetDbModel.DiyetisyenTbl" Width="1.5" PointX="0.75" PointY="5" />
+        <EntityTypeShape EntityType="DiyetDbModel.KisiDetay" Width="1.5" PointX="5.25" PointY="7.625" />
+        <EntityTypeShape EntityType="DiyetDbModel.KisiTbl" Width="1.5" PointX="3" PointY="4.375" />
+        <EntityTypeShape EntityType="DiyetDbModel.OgunTbl" Width="1.5" PointX="5.25" PointY="3.75" />
+        <AssociationConnector Association="DiyetDbModel.FK_BesinlerTbl_BesinTipTbl" />
+        <AssociationConnector Association="DiyetDbModel.FK_OgunTbl_BesinlerTbl" />
+        <AssociationConnector Association="DiyetDbModel.FK_KisiTbl_DiyetisyenTbl" />
+        <AssociationConnector Association="DiyetDbModel.FK_KisiDetay_KisiTbl" />
+        <AssociationConnector Association="DiyetDbModel.FK_OgunTbl_KisiTbl1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiyetProgrami", "DiyetProgrami\DiyetProgrami.csproj", "{163E1565-05DC-4DA7-808F-FBFED34B0C0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{163E1565-05DC-4DA7-808F-FBFED34B0C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163E1565-05DC-4DA7-808F-FBFED34B0C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163E1565-05DC-4DA7-808F-FBFED34B0C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163E1565-05DC-4DA7-808F-FBFED34B0C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81B4816A-0485-44BA-82C6-1FC320287981}
+	EndGlobalSection
+EndGlobal

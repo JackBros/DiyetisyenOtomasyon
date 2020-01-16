@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DiyetDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DiyetDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BesinlerTbl" EntityType="DiyetDbModel.BesinlerTbl" />
+    <EntitySet Name="BesinTipTbl" EntityType="DiyetDbModel.BesinTipTbl" />
+    <EntitySet Name="DiyetisyenTbl" EntityType="DiyetDbModel.DiyetisyenTbl" />
+    <EntitySet Name="KisiDetay" EntityType="DiyetDbModel.KisiDetay" />
+    <EntitySet Name="KisiTbl" EntityType="DiyetDbModel.KisiTbl" />
+    <EntitySet Name="OgunTbl" EntityType="DiyetDbModel.OgunTbl" />
+    <AssociationSet Name="FK_BesinlerTbl_BesinTipTbl" Association="DiyetDbModel.FK_BesinlerTbl_BesinTipTbl">
+      <End Role="BesinTipTbl" EntitySet="BesinTipTbl" />
+      <End Role="BesinlerTbl" EntitySet="BesinlerTbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgunTbl_BesinlerTbl" Association="DiyetDbModel.FK_OgunTbl_BesinlerTbl">
+      <End Role="BesinlerTbl" EntitySet="BesinlerTbl" />
+      <End Role="OgunTbl" EntitySet="OgunTbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KisiTbl_DiyetisyenTbl" Association="DiyetDbModel.FK_KisiTbl_DiyetisyenTbl">
+      <End Role="DiyetisyenTbl" EntitySet="DiyetisyenTbl" />
+      <End Role="KisiTbl" EntitySet="KisiTbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KisiDetay_KisiTbl" Association="DiyetDbModel.FK_KisiDetay_KisiTbl">
+      <End Role="KisiTbl" EntitySet="KisiTbl" />
+      <End Role="KisiDetay" EntitySet="KisiDetay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgunTbl_KisiTbl1" Association="DiyetDbModel.FK_OgunTbl_KisiTbl1">
+      <End Role="KisiTbl" EntitySet="KisiTbl" />
+      <End Role="OgunTbl" EntitySet="OgunTbl" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BesinlerTbl">
+    <Key>
+      <PropertyRef Name="BesinID" />
+    </Key>
+    <Property Name="BesinID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BesinAdi" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="BesinKalori" Type="Int32" Nullable="false" />
+    <Property Name="BesinGramaj" Type="Int32" Nullable="false" />
+    <Property Name="BesinTipID" Type="Int32" Nullable="false" />
+    <Property Name="besinDurum" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="BesinTipTbl" Relationship="DiyetDbModel.FK_BesinlerTbl_BesinTipTbl" FromRole="BesinlerTbl" ToRole="BesinTipTbl" />
+    <NavigationProperty Name="OgunTbl" Relationship="DiyetDbModel.FK_OgunTbl_BesinlerTbl" FromRole="BesinlerTbl" ToRole="OgunTbl" />
+  </EntityType>
+  <EntityType Name="BesinTipTbl">
+    <Key>
+      <PropertyRef Name="BesinTipID" />
+    </Key>
+    <Property Name="BesinTipID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BesinTipi" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="besinTipDurum" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="BesinlerTbl" Relationship="DiyetDbModel.FK_BesinlerTbl_BesinTipTbl" FromRole="BesinTipTbl" ToRole="BesinlerTbl" />
+  </EntityType>
+  <EntityType Name="DiyetisyenTbl">
+    <Key>
+      <PropertyRef Name="diyetisyenID" />
+    </Key>
+    <Property Name="diyetisyenID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="diyetisyenAdi" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="diyetisyenSifre" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="diyetisyenTipi" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="KisiTbl" Relationship="DiyetDbModel.FK_KisiTbl_DiyetisyenTbl" FromRole="DiyetisyenTbl" ToRole="KisiTbl" />
+  </EntityType>
+  <EntityType Name="KisiDetay">
+    <Key>
+      <PropertyRef Name="KisiDetayID" />
+    </Key>
+    <Property Name="KisiDetayID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KisiID" Type="Int32" Nullable="false" />
+    <Property Name="Boy" Type="Double" Nullable="false" />
+    <Property Name="Kilo" Type="Double" Nullable="false" />
+    <Property Name="CalismaBicimi" Type="Double" Nullable="false" />
+    <Property Name="KaloriIhtiyaci" Type="Double" />
+    <Property Name="VucutYuzeyAlani" Type="Double" />
+    <Property Name="YagsizVucutAgirligi" Type="Double" />
+    <Property Name="IdealKilo" Type="Double" />
+    <Property Name="VucutKitleIndeksi" Type="Double" />
+    <Property Name="bilgiGuncellemeTarihi" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="KisiTbl" Relationship="DiyetDbModel.FK_KisiDetay_KisiTbl" FromRole="KisiDetay" ToRole="KisiTbl" />
+  </EntityType>
+  <EntityType Name="KisiTbl">
+    <Key>
+      <PropertyRef Name="KisiID" />
+    </Key>
+    <Property Name="KisiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Adi" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Soyadi" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Cinsiyet" Type="Boolean" Nullable="false" />
+    <Property Name="DTarihi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="kayitTarihi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="diyetisyenID" Type="Int32" Nullable="false" />
+    <Property Name="kisiAktif" Type="Boolean" Nullable="false" />
+    <Property Name="telefonNo" Type="String" Nullable="false" MaxLength="14" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DiyetisyenTbl" Relationship="DiyetDbModel.FK_KisiTbl_DiyetisyenTbl" FromRole="KisiTbl" ToRole="DiyetisyenTbl" />
+    <NavigationProperty Name="KisiDetay" Relationship="DiyetDbModel.FK_KisiDetay_KisiTbl" FromRole="KisiTbl" ToRole="KisiDetay" />
+    <NavigationProperty Name="OgunTbl" Relationship="DiyetDbModel.FK_OgunTbl_KisiTbl1" FromRole="KisiTbl" ToRole="OgunTbl" />
+  </EntityType>
+  <EntityType Name="OgunTbl">
+    <Key>
+      <PropertyRef Name="OgunID" />
+    </Key>
+    <Property Name="OgunID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KisiID" Type="Int32" Nullable="false" />
+    <Property Name="BesinID" Type="Int32" Nullable="false" />
+    <Property Name="BesinAdet" Type="Int32" Nullable="false" />
+    <Property Name="diyetProgramiTarihi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ogunDurum" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="BesinlerTbl" Relationship="DiyetDbModel.FK_OgunTbl_BesinlerTbl" FromRole="OgunTbl" ToRole="BesinlerTbl" />
+    <NavigationProperty Name="KisiTbl" Relationship="DiyetDbModel.FK_OgunTbl_KisiTbl1" FromRole="OgunTbl" ToRole="KisiTbl" />
+  </EntityType>
+  <Association Name="FK_BesinlerTbl_BesinTipTbl">
+    <End Type="DiyetDbModel.BesinTipTbl" Role="BesinTipTbl" Multiplicity="1" />
+    <End Type="DiyetDbModel.BesinlerTbl" Role="BesinlerTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BesinTipTbl">
+        <PropertyRef Name="BesinTipID" />
+      </Principal>
+      <Dependent Role="BesinlerTbl">
+        <PropertyRef Name="BesinTipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgunTbl_BesinlerTbl">
+    <End Type="DiyetDbModel.BesinlerTbl" Role="BesinlerTbl" Multiplicity="1" />
+    <End Type="DiyetDbModel.OgunTbl" Role="OgunTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BesinlerTbl">
+        <PropertyRef Name="BesinID" />
+      </Principal>
+      <Dependent Role="OgunTbl">
+        <PropertyRef Name="BesinID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KisiTbl_DiyetisyenTbl">
+    <End Type="DiyetDbModel.DiyetisyenTbl" Role="DiyetisyenTbl" Multiplicity="1" />
+    <End Type="DiyetDbModel.KisiTbl" Role="KisiTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DiyetisyenTbl">
+        <PropertyRef Name="diyetisyenID" />
+      </Principal>
+      <Dependent Role="KisiTbl">
+        <PropertyRef Name="diyetisyenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KisiDetay_KisiTbl">
+    <End Type="DiyetDbModel.KisiTbl" Role="KisiTbl" Multiplicity="1" />
+    <End Type="DiyetDbModel.KisiDetay" Role="KisiDetay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KisiTbl">
+        <PropertyRef Name="KisiID" />
+      </Principal>
+      <Dependent Role="KisiDetay">
+        <PropertyRef Name="KisiID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgunTbl_KisiTbl1">
+    <End Type="DiyetDbModel.KisiTbl" Role="KisiTbl" Multiplicity="1" />
+    <End Type="DiyetDbModel.OgunTbl" Role="OgunTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KisiTbl">
+        <PropertyRef Name="KisiID" />
+      </Principal>
+      <Dependent Role="OgunTbl">
+        <PropertyRef Name="KisiID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
